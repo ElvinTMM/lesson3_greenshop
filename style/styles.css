@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
     background-color: #FFFFFF;
 }
 section{
@@ -12,6 +12,10 @@ section{
     align-items: center;
     text-align: center;
     margin: 0 auto;
+}
+h1{
+    margin-top: 52px;
+    margin-bottom: 40px;
 }
 .log{
 
@@ -36,24 +40,23 @@ section{
 .info{
     display: block;
     max-width: 300px;
-    margin-top: 40px;
-    margin-bottom: -2px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
+    padding-bottom: 14px;
 
 }
 input{
     width: 300px;
     height: 40px;
-    margin-top: 16px;
+    margin-bottom: 16px;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
     padding: 12px 14px;
 }
 ::placeholder{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #A5A5A5;
@@ -66,9 +69,9 @@ input{
     border: none;
     color: #FFFFFF;
     font-size: 16px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 16px;
-    margin-top: 41px;
+    margin-top: 25px;
 }
 .line {
     width: 300px;
