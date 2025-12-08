@@ -1,18 +1,18 @@
 .header{
-    /*max-width: 1200px;*/
-    /*height: 53px;*/
-    /*margin: 30px auto 0;*/
-    /*background: aqua;*/
-}
-.container {
-    display: flex;
-    /*margin: 0 auto;*/
-    max-width: 1200px;
-    height: 53px;
     margin: 30px auto 0;
     background: #FFFFFF;
     border-bottom: #46A35880 solid 0.3px;
     margin-bottom: 12px;
+}
+.container {
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    max-width: 1200px;
+    /*height: 53px;*/
+    /*margin: 30px auto 0;*/
+    /*background: #FFFFFF;*/
+    /*border-bottom: #46A35880 solid 0.3px;*/
+    /*margin-bottom: 12px;*/
 }
 .logo{
     color: #46A358;
