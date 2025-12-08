@@ -1,0 +1,133 @@
+.header{
+    /*max-width: 1200px;*/
+    /*height: 53px;*/
+    /*margin: 30px auto 0;*/
+    /*background: aqua;*/
+}
+.container {
+    display: flex;
+    /*margin: 0 auto;*/
+    max-width: 1200px;
+    height: 53px;
+    margin: 30px auto 0;
+    background: #FFFFFF;
+    border-bottom: #46A35880 solid 0.3px;
+    margin-bottom: 12px;
+}
+.logo{
+    color: #46A358;
+    padding-top: 1px;
+    width: 150px;
+}
+.nav {
+    margin-left: 229px;
+    margin-top: 8px;
+}
+.nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 27px;
+    transition: color 0.25s ease;
+}
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #46A358; /* зелёный */
+    transition: width 0.25s ease;
+}
+.nav a:hover {
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+.nav a:hover::after {
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #46A358;
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-left: 379px;
+}
+.button span{
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 4px;
+}
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    padding-top: 68px;
+    padding-left: 43px;
+}
+.left-side{
+    max-width: 590px;
+    display: inline-block;
+}
+.main h4{
+    font-weight: 500;
+    font-size: 14px;
+    line-height:16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    margin-bottom: 7px;
+}
+.main h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height:70px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.main span{
+    color: #46A358;
+}
+.main p{
+    color: #727272;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+}
+button{
+    width: 140px;
+    height: 40px;
+    background: #46A358;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 6px;
+    margin-bottom: 85px;
+}
+.right-side{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.small-image{
+    position: absolute;
+    height: 135px;
+    bottom: 17px;
+    left: 55px;
+}
