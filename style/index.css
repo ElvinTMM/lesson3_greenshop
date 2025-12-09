@@ -1,18 +1,14 @@
 .header{
-    margin: 30px auto 0;
-    background: #FFFFFF;
-    /*gi*/
+
     margin-bottom: 12px;
 }
-.container {
+.container-header {
     display: flex;
-    /*margin: 0 auto;*/
     max-width: 1200px;
     height: 53px;
     margin: 30px auto 0;
-    /*background: #FFFFFF;*/
+    background: #FFFFFF;
     border-bottom: #46A35880 solid 0.3px;
-    /*margin-bottom: 12px;*/
 }
 .logo{
     color: #46A358;
@@ -76,12 +72,15 @@
     max-width: 1200px;
     margin: 0 auto;
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
-    padding-top: 68px;
+    /*padding-top: 68px;*/
     padding-left: 43px;
+
+
 }
 .left-side{
     max-width: 590px;
     display: inline-block;
+    vertical-align: bottom;
 }
 .main h4{
     font-weight: 500;
@@ -124,6 +123,8 @@ button{
     display: inline-block;
     vertical-align: top;
     position: relative;
+    margin-left: 50px;
+
 }
 .small-image{
     position: absolute;
