@@ -150,18 +150,25 @@ button {
     left: 55px;
 }
 
-.container-products {
-    max-width: 1200px;
-    margin: 0 auto;
+.products{
     padding-top: 46px;
-
 }
 
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .sidebar {
-    float: left;
-    max-width: 310px;
+    /*display: inline-block;*/
+    width: 310px;
+    min-width: 310px;
     height: 774px;
     background: #FBFBFB;
+
+
 }
 
 .sidebar__title {
@@ -196,25 +203,32 @@ button {
 }
 
 .sidebar__img {
-    margin-top: 370px;
     max-width: 310px;
     max-height: 470px;
-
 }
 
 .sidebar__img img {
+    padding-top: 373px;
     width: 100%;
-    height: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .products__content {
-    overflow: hidden;
     padding-left: 50px;
-
+    width: 840px;
+    vertical-align: top;
+    flex: 1;
 }
 
 .products__toolbar {
+    display: flex;
+    align-items: center;
     padding-bottom: 31px;
+}
+
+.products__toolbar span a {
+    margin-right: 37px;
 }
 
 .products__toolbar a {
@@ -224,30 +238,60 @@ button {
     font-size: 15px;
     line-height: 16px;
     text-decoration: none;
-    word-spacing: 37px;
+    position: relative;
+    padding-bottom: 7px;
+
+}
+
+.products__toolbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #46A358;
+    transition: width 0.25s ease;
+}
+
+.products__toolbar a:hover {
+    font-family: "Cera Pro";
+    color: #46A358;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.products__toolbar a:hover::after {
+    width: 100%;
 }
 
 .right {
-    float: right;
     font-family: "Cera Pro";
     color: #3D3D3D;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
+    margin-left: auto;
 }
 
 .products__grid {
-    overflow: hidden;
-    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    font-size: initial;
 
 }
 
 .products__card {
-    display: inline-block;
     width: 258px;
     height: 350px;
     margin-right: 33px;
     margin-bottom: 70px;
+}
+
+.products__card:nth-child(3n) {
+    margin-right: 0;
 }
 
 .products__card img {
@@ -279,9 +323,10 @@ button {
 .pagination {
     display: flex;
     gap: 8px;
-    padding-left: 640px;
+    float: none;
     padding-top: 20px;
-    padding-bottom: 82px;
+    padding-bottom: 94px;
+    justify-content: flex-end;
 
 }
 
@@ -314,3 +359,64 @@ button {
     pointer-events: none;
 }
 
+
+.flex-row {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+
+}
+
+.promo-card {
+    position: relative;
+    background: #FBFBFB;
+    flex: 1 1 calc(50% - 14px);
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.promo-card img {
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    top: -52px;
+    left: 0;
+}
+
+.promo-content {
+    flex-direction: column;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 30px;
+    align-self: flex-start;
+    /*max-width: 220px;*/
+}
+
+.promo-content h3 {
+    padding-top: 37px;
+    font-family: "Cera Pro";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.promo-content p {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 26px;
+
+}
+
+.promo-content h3 span {
+    display: block;
+}
+
+.promo-content button {
+
+}
