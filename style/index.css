@@ -392,7 +392,7 @@ button {
     text-align: right;
     padding-right: 30px;
     align-self: flex-start;
-    /*max-width: 220px;*/
+
 }
 
 .promo-content h3 {
@@ -418,5 +418,89 @@ button {
 }
 
 .promo-content button {
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #46A358;
+    color: #FFFFFF;
+}
+.blog-wrapper {
+    width: 100%;
+}
 
+.blog-header {
+    margin-top: 138px;
+    text-align: center;
+}
+
+.blog-header h2 {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.blog-header p {
+    padding-top: 15px;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+}
+
+.blog-list {
+    display: grid;
+    padding-top: 35px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 43px;
+}
+
+
+.blog-card img {
+    width: 100%;
+    display: block;
+}
+
+.blog-meta {
+    display: block;
+    padding-top: 8.83px;
+    padding-bottom: 4px;
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #46A358;
+}
+
+.blog-card h3 {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #3D3D3D;
+    padding-bottom: 4px;
+}
+
+.blog-card p {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+    padding-bottom: 9px;
+}
+
+.blog-card a {
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+.blog-card a:hover {
+    color: #46A358;
 }
