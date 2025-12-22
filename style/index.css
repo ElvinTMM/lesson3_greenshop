@@ -150,12 +150,8 @@ button {
     left: 55px;
 }
 
-.products{
-    padding-top: 46px;
-}
 
 .container{
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -214,10 +210,15 @@ button {
     object-fit: contain;
 }
 
+.products .container{
+    display: flex;
+    padding-top: 46px;
+}
+
 .products__content {
     padding-left: 50px;
-    width: 840px;
-    vertical-align: top;
+    /*width: 840px;*/
+    /*vertical-align: top;*/
     flex: 1;
 }
 
@@ -227,11 +228,8 @@ button {
     padding-bottom: 31px;
 }
 
-.products__toolbar span a {
+.tabs a {
     margin-right: 37px;
-}
-
-.products__toolbar a {
     font-family: "Cera Pro";
     color: #3D3D3D;
     font-weight: 400;
@@ -266,7 +264,7 @@ button {
     width: 100%;
 }
 
-.right {
+.sort {
     font-family: "Cera Pro";
     color: #3D3D3D;
     font-weight: 400;
@@ -275,31 +273,87 @@ button {
     margin-left: auto;
 }
 
+/*<!-- CARD -->   <!-- PRODUCTS GRID -->*/
+
 .products__grid {
     display: flex;
     flex-wrap: wrap;
-    /*overflow: hidden;*/
     font-size: initial;
-
 }
 
 .products__card {
-    width: 258px;
-    height: 350px;
+    position: relative;
     margin-right: 33px;
     margin-bottom: 70px;
+    width: 258px;
+    min-height: 350px;
+    &:hover{
+        .icon{
+            text-align: center;
+            display: flex;
+        }
+    }
+}
+
+.products__card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #46A358;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* при наведении */
+.products__card:hover::after {
+    transform: scaleX(1);
 }
 
 .products__card:nth-child(3n) {
     margin-right: 0;
+    margin-left: auto;
 }
 
-.products__card img {
-    width: 100%;
-    height: 300px;
+.img-wrapper{
     background: #FBFBFB;
-    margin: 0 auto;
+    position: relative;
+    height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
+
+.icon{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    bottom: 7px;
+    width: 100%;
+    height: 35px;
+    gap: 10px;
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        height: 35px;
+        width: 35px;
+        border-radius: 4px;
+        background: #FFFFFF;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
 
 .name {
     color: #3D3D3D;
@@ -466,7 +520,7 @@ button {
 
 .blog-meta {
     display: block;
-    padding-top: 8.83px;
+    padding-top: 8px;
     padding-bottom: 4px;
     font-family: "Cera Pro";
     font-weight: 500;
