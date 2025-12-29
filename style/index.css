@@ -948,7 +948,8 @@ button {
     font-size: 18px;
     line-height: 16px;
     color: #3D3D3D;
-    margin: 0;
+
+
 }
 
 .footer-column a {
@@ -958,6 +959,8 @@ button {
     font-size: 14px;
     line-height: 30px;
     color: #3D3D3D;
+
+
 }
 
 .social {
@@ -978,6 +981,32 @@ button {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    margin-top: 20px;
 
 }
 
+.payments-title{
+    padding-top: 33px;
+}
+
+.payments{
+    display: flex;
+    width: 224px;
+    height: 26px;
+    margin-top: 13px;
+}
+
+
+
+.footer-copyright {
+    border-top: 1px solid #46A35833;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 13px;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #3D3D3D;
+    background: white;
+}
