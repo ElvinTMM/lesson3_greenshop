@@ -196,8 +196,7 @@
     height: 35px;
     border-radius: 6px;
     color: #FFFFFF;
-
-
+    text-decoration: none;
 }
 
 .btn-header span {
@@ -205,6 +204,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
+
 }
 
 .header-actions {
@@ -361,7 +361,7 @@
 .products__toolbar {
     display: flex;
     align-items: center;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
 }
 
 .tabs a {
@@ -373,7 +373,7 @@
     line-height: 16px;
     text-decoration: none;
     position: relative;
-    /*padding-bottom: 10px;*/
+    padding-bottom: 7px;
 
 }
 
@@ -415,10 +415,6 @@
     line-height: 16px;
     color: #3D3D3D;
 }
-
-
-
-
 
 /*<!-- CARD -->   <!-- PRODUCTS GRID -->*/
 
@@ -462,20 +458,56 @@
     transform: scaleX(1);
 }
 
+.products__card:nth-child(2) img {
+    transform: translate(0, -2px);
+}
+
 .products__card:nth-child(3n) {
     margin-right: 0;
     margin-left: auto;
+
+}
+
+.products__card:nth-child(3) img {
+    transform: translate(0, -5px);
+}
+
+.products__card:nth-child(4) img {
+    transform: translate(0px, -8px);
+}
+
+.products__card:nth-child(5) img {
+    transform: translate(0px, -4px);
+}
+
+.products__card:nth-child(6) img {
+    transform: translate(0px, -3px);
+}
+
+.products__card:nth-child(7) img {
+    transform: translate(0px, -9px);
+}
+
+.products__card:nth-child(8) img {
+    transform: translate(0px, 2px);
+}
+
+.products__card:nth-child(9) img {
+    transform: translate(0px, -8px);
 }
 
 .img-wrapper {
+    width: 100%;
     background: #FBFBFB;
     position: relative;
     height: 300px;
+    overflow: hidden;
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        transform: translate(1px, 5px);
     }
 }
 
@@ -499,12 +531,7 @@
         background: #FFFFFF;
     }
 
-    img {
-        width: 20px;
-        height: 20px;
-    }
 }
-
 
 .name {
     color: #3D3D3D;
@@ -529,7 +556,7 @@
     display: flex;
     gap: 10px;
     float: none;
-    padding-top: 21px;
+    padding-top: 19px;
     padding-bottom: 94px;
     justify-content: flex-end;
     margin-right: 1px;
@@ -565,7 +592,6 @@
     pointer-events: none;
 }
 
-
 .flex-row {
     display: flex;
     gap: 28px;
@@ -593,17 +619,16 @@
     left: 0;
 }
 
-.promo-content {
+.promo-content__left-side {
     flex-direction: column;
     margin-left: auto;
     text-align: right;
-    padding-right: 33px;
+    padding-right: 28px;
     align-self: flex-start;
-
 }
 
-.promo-content h3 {
-    padding-top: 36px;
+.promo-content__left-side h3 {
+    padding-top: 35px;
     font-family: "Cera Pro";
     font-weight: 900;
     font-size: 18px;
@@ -611,36 +636,131 @@
     text-transform: uppercase;
 }
 
-.promo-content p {
+.promo-content__left-side p {
     font-family: "Cera Pro";
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 26px;
+    padding-top: 7px;
+    padding-right: 2px;
+    color: #727272;
 
 }
 
-.promo-content h3 span {
+.promo-content__left-side span {
     display: block;
 }
 
-.promo-content button {
+.promo-content__left-side button {
+    width: 140px;
+    height: 40px;
     font-family: "Cera Pro";
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     background-color: #46A358;
     color: #FFFFFF;
+    border-radius: 6px;
+    margin-right: 3px;
+    margin-top: 23px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    gap: 3px;
+    margin-left: auto;
+
+    border: none;
+    cursor: pointer;
 }
 
+
+.promo-content__right-side {
+    flex-direction: column;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 32px;
+    align-self: flex-start;
+}
+
+.promo-content__right-side h3 {
+    padding-top: 35px;
+    font-family: "Cera Pro";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.promo-content__right-side span {
+    display: block;
+}
+
+.promo-content__right-side p {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 7px;
+    padding-right: 8px;
+    color: #727272;
+
+}
+
+.promo-content__right-side .p-line-2 {
+    display: inline-block;
+    transform: translateX(1px);
+}
+
+
+
+.promo-content__right-side span {
+    display: block;
+}
+
+.promo-content__right-side button {
+    width: 140px;
+    height: 40px;
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin-right: 3px;
+    margin-top: 23px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    gap: 3px;
+    margin-left: auto;
+
+    border: none;
+    cursor: pointer;
+}
+
+
+.container-blog{
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+
+.blog{
+    margin-top: 134px;
+
+}
 
 .blog-wrapper {
     width: 100%;
+
 }
 
 .blog-header {
-    margin-top: 138px;
     text-align: center;
+    transform: translateX(8px);
 }
 
 .blog-header h2 {
@@ -658,15 +778,19 @@
     font-size: 14px;
     line-height: 24px;
     color: #727272;
+    transform: translateX(-9px);
 }
 
 .blog-list {
     display: grid;
-    padding-top: 35px;
+    padding-top: 30px;
     grid-template-columns: repeat(4, 1fr);
     gap: 43px;
 }
 
+.blog-card{
+    background: #FBFBFB;
+}
 
 .blog-card img {
     width: 100%;
@@ -674,7 +798,7 @@
 }
 
 .blog-meta {
-    display: block;
+    display: flex;
     padding-top: 8px;
     padding-bottom: 4px;
     font-family: "Cera Pro";
@@ -682,6 +806,17 @@
     font-size: 14px;
     line-height: 16px;
     color: #46A358;
+    padding-left: 13px;
+    gap: 4px;
+
+}
+
+.blog-meta .divider {
+    padding: 0 4px; /* расстояние слева и справа от линии */
+}
+
+.blog-card:nth-child(2) .divider {
+    margin: 0 3px;
 }
 
 .blog-card h3 {
@@ -691,6 +826,7 @@
     line-height: 26px;
     color: #3D3D3D;
     padding-bottom: 4px;
+    padding-left: 13px;
 }
 
 .blog-card p {
@@ -700,6 +836,7 @@
     line-height: 22px;
     color: #727272;
     padding-bottom: 9px;
+    padding-left: 13px;
 }
 
 .blog-card a {
@@ -709,10 +846,21 @@
     line-height: 16px;
     color: #3D3D3D;
     text-decoration: none;
+    padding-left: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 18px;
 }
+
+
 
 .blog-card a:hover {
     color: #46A358;
+}
+
+.blog-card a svg {
+    fill: currentColor;
 }
 
 /*footer*/
