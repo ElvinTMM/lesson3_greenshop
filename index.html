@@ -50,30 +50,49 @@
                     <a href="#">Blogs</a>
                 </li>
             </ul>
+
         </nav>
-        <button class="button">
-            <img src="./logo/logout.svg" alt="logout">
+        <div class="header-actions">
+
+            <div class="search">
+                <svg width="20" height="20">
+                    <use xlink:href="./sprite.svg#search"></use>
+                </svg>
+            </div>
+
+            <div class="cart">
+                <svg width="29" height="24">
+                    <use xlink:href="./sprite.svg#shopping"></use>
+                </svg>
+            </div>
+        </div>
+        <a href="./pages/registration.html" class="btn-header">
+            <svg width="24" height="24">
+                <use xlink:href="./sprite.svg#logout"></use>
+            </svg>
             <span>Login</span>
-        </button>
+        </a>
     </div>
 </header>
 <main>
     <section class="main">
+        <div class="container-main">
         <div class="left-side">
             <h4>Welcome to GreenShop</h4>
             <h1>Let’s Make a Better <span>Planet</span></h1>
-            <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use <br>our plants to create an
                 unique Urban Jungle. Order your favorite plants!</p>
-            <button>SHOP NOW</button>
+            <button class="left__side">SHOP NOW</button>
         </div>
         <div class="right-side">
             <img src="./img/plant.png" alt="image">
             <img src="./img/small_plant.png" alt="image" class="small-image">
         </div>
+        </div>
     </section>
 </main>
 <section class="products">
-    <div class="container">
+    <div class="container-products">
 
         <!-- SIDEBAR -->
         <aside class="sidebar">
@@ -87,7 +106,7 @@
                     <li><a href="#">Small Plants</a></li>
                     <li><a href="#">Big Plants</a></li>
                     <li><a href="#">Succulents</a></li>
-                    <li><a href="#">Terrariums</a></li>
+                    <li><a href="#">Trerrariums</a></li>
                     <li><a href="#">Gardening</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
@@ -110,7 +129,10 @@
                 </div>
 
                 <div class="sort">
-                    Sort by: <span>Default sorting</span>
+                    Short by:<span>Default sorting</span>
+                    <svg width="16" height="16">
+                        <use xlink:href="./sprite.svg#arrow"></use>
+                    </svg>
                 </div>
             </div>
 
