@@ -1128,6 +1128,7 @@
 
 .footer-contacts__item:nth-child(3) {
     margin-right: 74px;
+
 }
 
 .footer-bottom__wrapper {
@@ -1210,7 +1211,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 11px;
 
 }
 
@@ -1222,7 +1223,7 @@
     display: flex;
     width: 224px;
     height: 26px;
-    margin-top: 13px;
+    margin-top: 5px;
 }
 
 
