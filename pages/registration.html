@@ -11,33 +11,43 @@
 </head>
 <body>
 <section>
-    <h1>
-        <span class="log">Login</span>
-        <span class="pipe">|</span>
-        <span class="register">Register</span>
-    </h1>
-    <p class="info">Enter your email and password to register.</p>
-    <form>
-        <label>
-            <input type="text" required pattern="[A-Za-z0-9]{3,16}" name="username" placeholder="Username">
-            <input type="email" required name="email" placeholder="Enter your email address">
-            <input type="password" name="password" required minlength="8" placeholder="Password">
-            <input type="password" name="password" placeholder="Confirm Password">
-            <button type="submit" name="submit" class="register-btn">Register</button>
-        </label>
-    </form>
-    <p class="line">
-        <span>Or register with</span>
-    </p>
-    <button class="button">
-        <img src="../logo/google%201.png" alt="google logo">
-        <span>Continue with Google</span>
-    </button>
-    <button class="button">
-        <img src="../logo/facebook%20.svg" alt="facebook logo">
-        <span>Continue with Facebook</span>
-    </button>
-    <div class="bottom"></div>
+    <div class="container">
+        <h1>
+            <span class="log">Login</span>
+            <span class="pipe"></span>
+            <span class="register">Register</span>
+        </h1>
+        <p class="info">Enter your email and password to register.</p>
+        <form>
+            <label>
+                <input type="text" required pattern="[A-Za-z0-9]{3,16}" name="username" placeholder="Username">
+                <input type="email" required name="email" placeholder="Enter your email address">
+                <input type="password" name="password" required minlength="8" placeholder="Password">
+                <input type="password" name="password" placeholder="Confirm Password">
+                <button type="submit" name="submit" class="register-btn">Register</button>
+            </label>
+        </form>
+        <p class="line">
+            <span>Or register with</span>
+        </p>
+        <button class="button">
+            <div class="btn-google">
+                <svg width="20" height="20">
+                    <use xlink:href="../sprite.svg#google-registration"></use>
+                </svg>
+                <span>Continue with Google</span>
+            </div>
+        </button>
+        <button class="button">
+            <div class="btn-facebook">
+                <svg width="20" height="20">
+                    <use xlink:href="../sprite.svg#facebook-registration"></use>
+                </svg>
+                <span>Continue with Facebook</span>
+            </div>
+        </button>
+        <div class="green-line"></div>
+    </div>
 </section>
 
 </body>
