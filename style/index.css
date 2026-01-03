@@ -189,8 +189,8 @@
 .btn-header {
     margin-left: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 16px;
+    padding-top: 6px;
     background: #46A358;
     width: 100px;
     height: 35px;
@@ -199,7 +199,14 @@
     text-decoration: none;
 }
 
+.btn-header:hover {
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
+}
+
 .btn-header span {
+    padding-top: 4px;
     font-family: "Cera Pro";
     font-weight: 500;
     font-size: 16px;
@@ -279,7 +286,13 @@
     text-transform: uppercase;
     border-radius: 6px;
     margin-top: 42px;
+    cursor: pointer;
+}
 
+.left__side:hover {
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
 }
 
 .right-side {
@@ -679,6 +692,12 @@
     cursor: pointer;
 }
 
+.promo-content__left-side button:hover {
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
+}
+
 .promo-content__right-side {
     flex-direction: column;
     margin-left: auto;
@@ -741,6 +760,12 @@
 
     border: none;
     cursor: pointer;
+}
+
+.promo-content__right-side button:hover {
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
 }
 
 /*blog*/
@@ -1068,7 +1093,12 @@
     font-size: 18px;
     line-height: 16px;
     color: #FFFFFF;
+}
 
+.newsletter-form button:hover {
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
 }
 
 .footer-newsletter p{
