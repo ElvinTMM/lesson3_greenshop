@@ -82,6 +82,13 @@ input{
     font-weight: 700;
     line-height: 16px;
     margin-top: 26px;
+    cursor: pointer;
+}
+
+.register-btn:hover{
+    background: #4FB96A;
+    color: #3D3D3D;
+    transition: 2s;
 }
 
 .line {
@@ -121,6 +128,7 @@ input{
     margin-left: 100px;
     margin-bottom: 15px;
     background: white;
+    cursor: pointer;
 }
 
 .button span{
@@ -144,6 +152,7 @@ input{
     padding-left: 63px;
     padding-top: 4px;
     gap: 5px;
+    cursor: pointer;
 }
 
 .green-line{
