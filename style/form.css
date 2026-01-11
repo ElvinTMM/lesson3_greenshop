@@ -70,6 +70,8 @@ input{
     padding: 12px 14px;
 }
 
+
+
 .register-btn{
     width: 300px;
     height: 45px;
@@ -160,4 +162,64 @@ input{
     height: 10px;
     background-color: #46A358;
     margin-top: 26px;
+}
+
+/*checkbox*/
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* скрываем стандартный чекбокс */
+.checkbox .inp-cbx {
+    display: none;
+}
+
+/* кликабельная область */
+.checkbox .cbx {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #3D3D3D;
+}
+
+/* квадрат */
+.checkbox .cbx span:first-child {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #A5A5A5;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+/* галочка */
+.checkbox .cbx svg {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 16;
+    transition: 0.3s;
+}
+
+/* hover */
+.checkbox .cbx:hover span:first-child {
+    border-color: #46A358;
+}
+
+/* checked */
+.checkbox .inp-cbx:checked + .cbx span:first-child {
+    background: #46A358;
+    border-color: #46A358;
+}
+
+.checkbox .inp-cbx:checked + .cbx svg {
+    stroke-dashoffset: 0;
 }
