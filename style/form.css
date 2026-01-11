@@ -16,7 +16,7 @@ h1{
 }
 
 .log{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro" , sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -32,7 +32,7 @@ h1{
 }
 
 .register{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -43,7 +43,7 @@ h1{
 .info{
     display: block;
     max-width: 300px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -53,7 +53,7 @@ h1{
 }
 
 form{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -77,7 +77,7 @@ input{
     border-radius: 5px;
     border: none;
     color: #FFFFFF;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -132,7 +132,7 @@ input{
 }
 
 .button span{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
