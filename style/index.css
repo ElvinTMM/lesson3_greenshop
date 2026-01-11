@@ -186,6 +186,26 @@
 
 }
 
+.search {
+    color: #3D3D3D;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.search:hover {
+    color: #46A358;
+}
+
+.cart{
+    color: #3D3D3D;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cart:hover {
+    color: #46A358;
+}
+
 .btn-header {
     margin-left: auto;
     display: flex;
@@ -545,9 +565,15 @@
         width: 35px;
         border-radius: 4px;
         background: #FFFFFF;
+
+        :hover{
+            cursor: pointer;
+        }
     }
 
 }
+
+
 
 .name {
     color: #3D3D3D;
@@ -1133,6 +1159,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    :hover{
+        color: #46A358;
+        font-weight: bold;
+    }
 }
 
 
@@ -1177,9 +1208,12 @@
 }
 
 .footer-column ul {
-    /*margin: 0;*/
-    /*padding: 0;*/
     list-style: none;
+
+    :hover{
+        color: #46A358;
+        cursor: pointer;
+    }
 }
 
 .footer-column:nth-child(1) {
@@ -1227,10 +1261,12 @@
 .social {
     display: flex;
     gap: 10px;
+
 }
 
 .social svg {
     display: block;
+
 }
 
 .social__item{
@@ -1243,7 +1279,12 @@
     justify-content: center;
     text-decoration: none;
     margin-top: 11px;
+    transition: transform 0.25s ease;
 
+}
+
+.social__item:hover {
+    transform: scale(1.2);
 }
 
 .payments-title{

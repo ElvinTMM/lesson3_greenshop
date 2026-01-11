@@ -19,32 +19,33 @@
         </h1>
         <p class="info">Enter your email and password to register.</p>
         <form>
-            <label>
-                <input type="text" required pattern="[A-Za-z0-9]{3,16}" name="username" placeholder="Username">
-                <input type="email" required name="email" placeholder="Enter your email address">
-                <input type="password" name="password" required minlength="8" placeholder="Password">
-                <input type="password" name="password" placeholder="Confirm Password">
-                <button type="submit" name="submit" class="register-btn">Register</button>
-            </label>
+
+            <input type="text" required pattern="[A-Za-z0-9]{3,16}" name="username" placeholder="Username">
+            <input type="email" required name="email" placeholder="Enter your email address">
+            <input type="password" name="password" required minlength="8" placeholder="Password">
+            <input type="password" name="password" placeholder="Confirm Password">
+
+            <button type="submit" name="submit" class="register-btn">Register</button>
+
         </form>
         <p class="line">
             <span>Or register with</span>
         </p>
         <button class="button">
-            <div class="btn-google">
+            <span class="btn-google">
                 <svg width="20" height="20">
                     <use xlink:href="../sprite.svg#google-registration"></use>
                 </svg>
                 <span>Continue with Google</span>
-            </div>
+            </span>
         </button>
         <button class="button">
-            <div class="btn-facebook">
+            <span class="btn-facebook">
                 <svg width="20" height="20">
                     <use xlink:href="../sprite.svg#facebook-registration"></use>
                 </svg>
                 <span>Continue with Facebook</span>
-            </div>
+            </span>
         </button>
         <div class="green-line"></div>
     </div>
