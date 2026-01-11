@@ -1,5 +1,37 @@
 @import "./fonts.css";
 
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+    animation: hidePreloader 5s forwards;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #e5e5e5;
+    border-top-color: #46A358;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes hidePreloader {
+    0%   { opacity: 1; visibility: visible; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -34,7 +66,7 @@
 .list {
     display: flex;
     gap: 50px;
-    font-family:"Cera Pro";
+    font-family:"Cera Pro", sans-serif;
     font-size: 16px;
 
 
@@ -227,7 +259,7 @@
 
 .btn-header span {
     padding-top: 4px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -260,7 +292,7 @@
 }
 
 .left-side h4 {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -272,7 +304,7 @@
 }
 
 .left-side h1 {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 900;
     font-size: 70px;
     line-height: 70px;
@@ -287,7 +319,7 @@
 .left-side p {
     padding-top: 8px;
     padding-left: 3px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     color: #727272;
     font-weight: 400;
     font-size: 14px;
@@ -295,7 +327,7 @@
 }
 
 .left__side {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     width: 140px;
     height: 40px;
     background: #46A358;
@@ -346,7 +378,7 @@
 }
 
 .sidebar__title {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -356,7 +388,7 @@
 }
 
 .sidebar__list {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 40px;
@@ -401,7 +433,7 @@
 
 .tabs a {
     margin-right: 36px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     color: #3D3D3D;
     font-weight: 400;
     font-size: 15px;
@@ -424,7 +456,7 @@
 }
 
 .products__toolbar a:hover {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     color: #46A358;
     font-weight: 700;
     font-size: 15px;
@@ -443,8 +475,8 @@
     margin-left: auto;
     margin-right: 3px;
 
-    margin-left: auto;
-    font-family: "Cera Pro";
+
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
@@ -578,15 +610,15 @@
 .name {
     color: #3D3D3D;
     padding-top: 12px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #3D3D3D;
+
 }
 
 .price {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -616,7 +648,7 @@
     text-decoration: none;
     color: #3D3D3D;
     font-size: 18px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 300;
     line-height: 16px;
     transition: all 0.2s ease;
@@ -673,7 +705,7 @@
 
 .promo-content__left-side h3 {
     padding-top: 35px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 24px;
@@ -681,7 +713,7 @@
 }
 
 .promo-content__left-side p {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -698,7 +730,7 @@
 .promo-content__left-side button {
     width: 140px;
     height: 40px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -734,7 +766,7 @@
 
 .promo-content__right-side h3 {
     padding-top: 35px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 24px;
@@ -746,7 +778,7 @@
 }
 
 .promo-content__right-side p {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -768,7 +800,7 @@
 .promo-content__right-side button {
     width: 140px;
     height: 40px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -818,7 +850,7 @@
 }
 
 .blog-header h2 {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 16px;
@@ -827,7 +859,7 @@
 
 .blog-header p {
     padding-top: 15px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -855,7 +887,7 @@
     display: flex;
     padding-top: 8px;
     padding-bottom: 4px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -912,7 +944,7 @@
 }
 
 .blog-card h3 {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -922,7 +954,7 @@
 }
 
 .blog-card p {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -932,7 +964,7 @@
 }
 
 .blog-card a {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -1049,7 +1081,7 @@
 
 .footer-feature h4{
     padding-top: 18px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 16px;
@@ -1062,7 +1094,7 @@
 
 .footer-feature p{
     padding-top: 9px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -1081,7 +1113,7 @@
 }
 
 .footer-newsletter h4 {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -1101,7 +1133,7 @@
     padding: 10px 12px;
     outline: none;
     border-radius: 6px 0 0 6px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -1114,7 +1146,7 @@
     cursor: pointer;
     border-radius: 0 6px 6px 0;
     background: #46A358;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -1129,7 +1161,7 @@
 
 .footer-newsletter p{
     margin-top: 17px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
@@ -1168,7 +1200,7 @@
 
 
 .footer-contacts__item span{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -1177,7 +1209,7 @@
 
 .footer-contacts__item a{
     text-decoration: none;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -1237,7 +1269,7 @@
 
 
 .footer-column h4{
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -1249,7 +1281,7 @@
 
 .footer-column a {
     text-decoration: none;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
@@ -1305,7 +1337,7 @@
     text-align: center;
     padding-top: 6px;
     padding-bottom: 13px;
-    font-family: "Cera Pro";
+    font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
