@@ -239,7 +239,9 @@
         align-items: center;
         padding-right: 0;
     }
-
+    .footer-copyright{
+        margin-top: 15px;
+    }
 
 
 }
@@ -260,6 +262,13 @@
 @media screen and (max-width: 576px){
     .left-side{
         margin: 0;
+        & > h1{
+            line-height: 2.1;
+        }
+    }
+    .pagination{
+        justify-content: center;
+        padding-top: 25px;
     }
 
     .sort{
@@ -289,6 +298,9 @@
     .footer-contacts__logo{
         align-items: center;
         padding-right: 0;
+    }
+    .footer-copyright{
+        margin-top: 15px;
     }
 
 }
