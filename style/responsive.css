@@ -6,15 +6,16 @@
         padding: 0 15px;
     }
 
+    .container-main{
+        width: 100%;
+    }
+
     .left-side h1 {
         /* Плавно уменьшаем заголовок от 70px до 40px */
         font-size: clamp(20px, 6vw, 70px);
         line-height: 1.1;
     }
 
-    .right-side {
-        max-width: 100%; /* Картинка начинает плавно сжиматься */
-    }
 
     .blog-list{
         display: flex;
@@ -29,10 +30,13 @@
     .products__grid{
         gap: 18px;
     }
-)
 }
 
-
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 15px;
+    }
+}
 
 /*Large  > Medium < 992px */
 
@@ -47,22 +51,24 @@
         margin: 0 ;
     }
     .right-side {
-        width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin: 16px 0 0;
         img:not(.small-image){
             position: relative;
             width: 100%;
-            height: 100%;
-            max-width: 500px;
+            height: auto;
+            max-width: 400px;
+            object-fit: contain;
         }
     }
+
     .small-image{
         height: auto;
-        bottom: 15px;
-        left: 55px;
-        transform: translateX(180%)
+        bottom: 22px;
+        left: 34px;
+
     }
 
     .sidebar{

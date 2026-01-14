@@ -290,7 +290,6 @@
     justify-content: space-between;
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 
-
 }
 
 .left-side {
@@ -358,20 +357,30 @@
 }
 
 .right-side {
-    display: flex;
-    /*align-items: flex-end;*/
     margin-left: 0;
     vertical-align: top;
-    position: relative;
 
 }
 
+.plant-box {
+    position: relative;
+    display: inline-block;
+}
+
+.big-image {
+    width: 518px;
+    height: auto;
+    display: block;
+    transform: translateY(-3%);
+
+}
 
 .small-image {
+    width: 135px;
     position: absolute;
+    bottom: 30px;
+    left: 12%;
     height: auto;
-    bottom: 20px;
-    left: 55px;
 }
 
 
